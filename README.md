@@ -22,6 +22,10 @@ To Run Locally
 
 3.  `docker-compose up -d` to get the service up and running.
 
+4.  `docker-compose down` to stop the service. Don't worry. The data will persist locally for the next time you run the service.
+
+5.  `docker-compose logs healthgateway` to view the logs.
+
 Interact with Gateway
 =====================
 Please refer to [Getting Started](getting_started.md)
