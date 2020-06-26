@@ -22,6 +22,10 @@ To Run Locally
 
 3.  `docker-compose up -d` to get the service up and running.
 
+Interact with Gateway
+=====================
+Please refer to [Getting Started](getting_started.md)
+
 Contact
 =======
 
