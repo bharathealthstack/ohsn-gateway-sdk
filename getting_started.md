@@ -1,4 +1,4 @@
-To get started, few basic configuration needs to be in place.
+To get started, the following flows have to be implemented and tested.
 
 ### [API Docs for OHSN Gateway](https://documenter.getpostman.com/view/1963101/Szmh3chd?version=latest)
 
