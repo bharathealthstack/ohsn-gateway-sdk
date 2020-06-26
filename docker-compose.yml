@@ -5,7 +5,6 @@ services:
     image: raghavadss/ohsn-gateway-sdk:1.0
     container_name: healthgateway
     restart: unless-stopped
-    env_file: env.DEV
     environment:
       - NODE_ENV=DEV
       - DB_HOST=database
