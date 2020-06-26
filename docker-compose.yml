@@ -5,19 +5,19 @@ services:
     image: raghavadss/ohsn-gateway-sdk:1.0
     container_name: healthgateway
     restart: unless-stopped
+    env_file: env.DEV
     environment:
       - NODE_ENV=DEV
       - DB_HOST=database
-      - PORT=3000
     ports:
-      - "3000:3000"
+      - '3000:3000'
     expose:
-      - "3000"
+      - '3000'
     depends_on:
       - database
     volumes:
       - node_modules:/local/services/healthgateway/node_modules
-    command: ./wait-for.sh database:3306 -- node build/server.js
+    command: ./wait-for.sh database:3306 -- /app/app.bin
   database:
     image: mysql:5.7
     container_name: database
